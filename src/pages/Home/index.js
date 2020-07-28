@@ -11,9 +11,9 @@ function Home() {
       <Menu />
 
       <BannerMain
-          videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-          url={dadosIniciais.categorias[0].videos[0].url}
-          videosDescription={"O que é FrontEnd?"}
+          videoTitle={dadosIniciais.categorias[4].videos[2].titulo}
+          url={dadosIniciais.categorias[4].videos[2].url}
+          videosDescription={"God of War"}
         />
 
         <Carousel

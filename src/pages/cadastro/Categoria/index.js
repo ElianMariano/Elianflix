@@ -7,6 +7,19 @@ function CadastroCategoria() {
         <PageDefault>
             <h1>Cadastro de Vídeo</h1>
 
+            <form>
+                <label>
+                Nome da Categoria:
+                <input
+                    type="text"
+                />
+                </label>
+
+                <button>
+                Cadastrar
+                </button>
+            </form>
+
             <Link to="/">
                 Ir para a Home
             </Link>
