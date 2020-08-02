@@ -1,92 +1,112 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
+import Button from '../../../components/Button';
 
 import FormField from '../../../components/FormField';
 
 function CadastroCategoria() {
-    const [ categories, setCategories ] = useState([]);
-    
-    const initialValues = {
-        name: 'Categoria',
-        description: 'Descrição',
-        color: '#000'
-    }
-    
-    const [ values, setValues ] = useState(initialValues);
+  const [categories, setCategories] = useState([]);
 
-    function setValue(key, value){
-        setValues({
-            ...values,
-            [key]: value
-        });
-    }
+  const initialValues = {
+    name: '',
+    description: '',
+    color: '#000',
+  };
 
-    function handleSubmit(e){
-        e.preventDefault();
+  const [values, setValues] = useState(initialValues);
 
+  function setValue(key, value) {
+    setValues({
+      ...values,
+      [key]: value,
+    });
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    setCategories([
+      ...categories,
+      values,
+    ]);
+
+    setValues(initialValues);
+  }
+
+  function handleChange(e) {
+    setValue(e.target.getAttribute('name'), e.target.value);
+  }
+
+  useEffect(() => {
+    const URL = 'http://localhost:8000/categories';
+    fetch(URL)
+      .then(async (res) => {
+        const resposta = await res.json();
         setCategories([
-            ...categories,
-            values
+          ...resposta,
         ]);
+      });
+  }, []);
 
-        setValues(initialValues);
-    }
+  return (
+    <PageDefault>
+      <h1>
+        Cadastro de Vídeo:
+        {values.name}
+      </h1>
 
-    function handleChange(e){
-        setValue(e.target.getAttribute('name'), e.target.value);
-    }
+      <form onSubmit={handleSubmit}>
 
-    return (
-        <PageDefault>
-            <h1>Cadastro de Vídeo: {values.name} </h1>
+        <FormField
+          label="Nome da categoria"
+          type="text"
+          name="name"
+          value={values.name}
+          onChange={handleChange}
+        />
 
-            <form onSubmit={handleSubmit}>
+        <FormField
+          label="Descrição"
+          type="textarea"
+          name="description"
+          value={values.description}
+          onChange={handleChange}
+        />
 
-                <FormField
-                    label="Nome da categoria"
-                    type="text"
-                    name="name"
-                    value={values.name}
-                    onChange={handleChange}
-                />
+        <FormField
+          label="Cor"
+          type="color"
+          name="color"
+          value={values.color}
+          onChange={handleChange}
+        />
 
-                <FormField
-                    label="Descrição"
-                    type="textarea"
-                    name="description"
-                    value={values.description}
-                    onChange={handleChange}
-                />
+        <Button>
+          Cadastrar
+        </Button>
+      </form>
 
-                <FormField
-                    label="Cor"
-                    type="color"
-                    name="color"
-                    value={values.color}
-                    onChange={handleChange}
-                />
+      {categories.length === 0 && (
+        <div>
+          Loading ...
+        </div>
+      )}
 
-                <button>
-                    Cadastrar
-                </button>
-            </form>
+      <ul>
+        {categories.map((category, i) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <li key={`${category.nome}${i}`}>
+            {category.name}
+          </li>
+        ))}
+      </ul>
 
-            <ul>
-                {categories.map((category, i) => {
-                    return (
-                        <li key={`${category}${i}`}>
-                            {category.name}
-                        </li>
-                    )
-                })}
-            </ul>
-
-            <Link to="/">
-                Ir para a Home
-            </Link>
-        </PageDefault>
-    )
+      <Link to="/">
+        Ir para a Home
+      </Link>
+    </PageDefault>
+  );
 }
 
 export default CadastroCategoria;
