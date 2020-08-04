@@ -1,4 +1,4 @@
-# Reactflix
+# Elianflix
 Uma aplicação Frontend feita com ReactJs inpirada na Netflix. Esta aplicação desenvolvida durante a semana Imersão React da Alura.
 
 <img alt="Imagem 1" src="imgs/img.png" width="80%" />
