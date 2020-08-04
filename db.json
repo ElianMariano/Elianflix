@@ -1,16 +1,305 @@
 {
-    "categories": [
-        {
-            "id": 1,
-            "name": "Front End",
-            "description": "Descrição da categoria front end",
-            "color": "#cbd1ff"
-        },
-        {
-            "id": 2,
-            "name": "Back End",
-            "description": "Descrição da categoria backend end",
-            "color": "#cbd1ff"
-        }
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Front End",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "#6BD1FF"
+    },
+    {
+      "id": 2,
+      "titulo": "Back End",
+      "cor": "#00C86F"
+    },
+    {
+      "id": 3,
+      "titulo": "Data Science e Inteligência Artificial",
+      "cor": "#9cd33b"
+    },
+    {
+      "id": 4,
+      "titulo": "Filmes",
+      "cor": "orange"
+    },
+    {
+      "id": 5,
+      "titulo": "Games",
+      "cor": "red"
+    },
+    {
+      "id": 6,
+      "titulo": "Aprendendo a aprender tecnologia",
+      "cor": "#6b5be2"
+    },
+    {
+      "id": 7,
+      "titulo": "Ciência",
+      "cor": "#be08c4"
+    },
+    {
+      "id": 8,
+      "titulo": "Podcasts",
+      "cor": "#1f53b5"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "SEO com React",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Componentização com VanillaJS #AluraMais",
+      "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Pare de chutar e aprenda a display: inline #01",
+      "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
+      "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Novidades do Angular v9",
+      "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "Base para aprender os frameworks",
+      "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
+      "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
+      "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
+      "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "API: Dicionário do Programador",
+      "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "titulo": "Usando Git Direito",
+      "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+    },
+    {
+      "id": 14,
+      "categoriaId": 3,
+      "titulo": "Teste de Turing",
+      "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+    },
+    {
+      "id": 15,
+      "categoriaId": 3,
+      "titulo": "O que é Data Science?",
+      "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+    },
+    {
+      "id": 16,
+      "categoriaId": 3,
+      "titulo": "Melhor forma de aprender Python",
+      "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+    },
+    {
+      "id": 17,
+      "categoriaId": 3,
+      "titulo": "Como ingressar no mercado de Data Science?",
+      "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+    },
+    {
+      "id": 18,
+      "categoriaId": 4,
+      "titulo": "Interestellar",
+      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+    },
+    {
+      "id": 19,
+      "categoriaId": 4,
+      "titulo": "Gattaca",
+      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+    },
+    {
+      "id": 20,
+      "categoriaId": 4,
+      "titulo": "A Chegada",
+      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+    },
+    {
+      "id": 21,
+      "categoriaId": 4,
+      "titulo": "Feitiço do Tempo",
+      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+    },
+    {
+      "id": 22,
+      "categoriaId": 5,
+      "titulo": "Final Fantasy 7",
+      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+    },
+    {
+      "id": 23,
+      "categoriaId": 5,
+      "titulo": "Assassins Creed Valhalla",
+      "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+    },
+    {
+      "id": 24,
+      "categoriaId": 5,
+      "titulo": "God of War 4",
+      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+    },
+    {
+      "id": 25,
+      "categoriaId": 5,
+      "titulo": "Resident Evil 8",
+      "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+    },
+    {
+      "id": 26,
+      "categoriaId": 5,
+      "titulo": "Pokémon Let's Go Pikachu/Eevee",
+      "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+    },
+    {
+      "id": 27,
+      "categoriaId": 5,
+      "titulo": "Whatch Dogs Legion - Time Melhor Idade",
+      "url": "https://www.youtube.com/watch?v=bB3akZJtUbA"
+    },
+    {
+      "id": 28,
+      "categoriaId": 6,
+      "titulo": "Como estudar melhor?",
+      "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+    },
+    {
+      "id": 29,
+      "categoriaId": 6,
+      "titulo": "Faculdade",
+      "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+    },
+    {
+      "id": 30,
+      "categoriaId": 6,
+      "titulo": "Frameworks",
+      "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+    },
+    {
+      "id": 31,
+      "categoriaId": 6,
+      "titulo": "A mágica do Aprendizado",
+      "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+    },
+    {
+      "id": 32,
+      "categoriaId": 6,
+      "titulo": "Como aprender a programar?",
+      "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+    },
+    {
+      "id": 33,
+      "categoriaId": 7,
+      "titulo": "Como funciona o Som?",
+      "url": "https://www.youtube.com/watch?v=WLM6-By0qBg"
+    },
+    {
+      "id": 34,
+      "categoriaId": 7,
+      "titulo": "As Ondas Gigantes de Interstellar | Ciência dos Filmes | O Físico Turista #14",
+      "url": "https://www.youtube.com/watch?v=xHf8Zls8OUM"
+    },
+    {
+      "id": 35,
+      "categoriaId": 7,
+      "titulo": "Gravidade | Nerdologia",
+      "url": "https://www.youtube.com/watch?v=CcM4eEE4R0Q"
+    },
+    {
+      "id": 36,
+      "categoriaId": 7,
+      "titulo": "ZONA DA MORTE | Nerdologia",
+      "url": "https://www.youtube.com/watch?v=8X5-XxLtaSQ"
+    },
+    {
+      "id": 37,
+      "categoriaId": 7,
+      "titulo": "O Efeito Doppler Explicado",
+      "url": "https://www.youtube.com/watch?v=78WkQObqp3U&t=1s"
+    },
+    {
+      "id": 38,
+      "categoriaId": 8,
+      "titulo": "Primo Rico - Flow Podcast #165",
+      "url": "https://www.youtube.com/watch?v=lYNBpQgQzeo"
+    },
+    {
+      "id": 39,
+      "categoriaId": 8,
+      "titulo": "Neuroscientist Andrew Huberman on Future of Treatment for Vision Loss",
+      "url": "https://www.youtube.com/watch?v=t98wnJziUaw"
+    },
+    {
+      "id": 40,
+      "categoriaId": 8,
+      "titulo": "GAULES - Flow Podcast #117",
+      "url": "https://www.youtube.com/watch?v=vStgnVQtyeA"
+    },
+    {
+      "id": 41,
+      "categoriaId": 8,
+      "titulo": "Brian Kernighan - UNIX, C, AWK, AMPL and Go Programming - AI Podcast #109 with Lex Fridman",
+      "url": "https://www.youtube.com/watch?v=O9upVbGSBFo"
+    },
+    {
+      "id": 42,
+      "categoriaId": 8,
+      "titulo": "Pedro Loos(Ciência Todo Dia) - Flow Podcast #55",
+      "url": "https://www.youtube.com/watch?v=2YXEtKboQas&t=374s"
+    },
+    {
+      "titulo": "ALBERT EINSTEIN - Canal Nostalgia",
+      "url": "https://www.youtube.com/watch?v=gPSk0Xjz0og",
+      "categoriaId": 7,
+      "id": 45
+    }
+  ]
 }
