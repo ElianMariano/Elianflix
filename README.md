@@ -10,4 +10,13 @@ json que representa o banco de dados. Conforme novos dados são adicionados, o j
 
 ### Frontend
 O Frontend foi todo feito através do ReactJS, e utilizando algumas dependências para melhor desenvolvimento dos componentes,
-como o styled-components, e slick-slider.
+como o **styled-components**, e **slick-slider**.
+
+### Desafios
+O desafio de aumento do componente *VideoCard* foi realizado utilizando uma pseudo-classe do
+*css* chamada *hover* quando o mouse passa em cima do elemento, realizando uma anomação de
+5 segundos. Outro desafio realizado, foi o conserto de um *Bug* do componente *FormField*,
+o qual o seu input apresentava uma animação errada quando estava preenchido. Para consertar
+esse erro, foi necessário utilizar a pseudo-classe *not* do *css* quando o elemento span
+não estava com o foco, para que esse elemento diminuíse seu tamanho e o texto fosse
+apresentado.

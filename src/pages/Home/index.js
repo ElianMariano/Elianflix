@@ -28,8 +28,8 @@ function Home() {
           return (
             <div key={categoria.id}>
               <BannerMain
-                videoTitle={dadosIniciais[4].videos[2].titulo}
-                url={dadosIniciais[4].videos[2].url}
+                videoTitle={dadosIniciais[3].videos[2].titulo}
+                url={dadosIniciais[3].videos[2].url}
                 videoDescription="God of War - PS4"
               />
               <Carousel
